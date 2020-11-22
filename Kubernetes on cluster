@@ -1,0 +1,17 @@
+1. Setup or Preparation Steps
+  a. Create AWS account (Free tier)
+  b. Create VPC
+  c. Create an IAM role with Security Group
+2. Creatre Cluster Control Plane
+  Master--create with IAM role
+    a. choose cluster name, K8s version
+    b. choose region and VPC for your cluster
+    c. set security cluster 
+3. Create Worker Nodes and connect to cluster
+  Node---EC2 instance
+    a. Create as a Node Group (group of Nodes)
+    b. Choose cluster it will attach to
+    c. Define Security Group, select instance type, resources
+    d. define max and min nuumber of Nodes (Autoscalling)
+4. Create Worker Nodes and connect to cluster
+    
